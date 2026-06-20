@@ -7,7 +7,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/Status-Interactive_Demo-00C2FF?style=for-the-badge)](https://github.com/sahu0247/river_simulation-)
-[![Platform](https://img.shields.io/badge/Platform-Web_App-black?style=for-the-badge&logo=react)](https://github.com/sahu0247/river_simulation-)
+[![Platform](https://img.shields.io/badge/Platform-Web_App-black?style=for-the-badge&logo=react)]([https://github.com/sahu0247/river_simulation-](https://river-simulation.vercel.app/))
 [![Graphics](https://img.shields.io/badge/Visuals-HTML5_Canvas-F16529?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 [![License](https://img.shields.io/badge/License-MIT-FFC107?style=for-the-badge)](LICENSE)
 
