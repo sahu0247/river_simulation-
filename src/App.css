@@ -5,5 +5,148 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #080b11;
+  color: #f1f5f9;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 22, 36, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-heavy {
+  background: rgba(10, 15, 28, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Sliders */
+input[type="range"].custom-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.15s ease;
+}
+
+input[type="range"].custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.1s ease, background-color 0.15s ease;
+}
+
+input[type="range"].custom-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"].slider-blue::-webkit-slider-thumb {
+  background-color: #3b82f6;
+  border: 2px solid #93c5fd;
+}
+input[type="range"].slider-blue:hover {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+input[type="range"].slider-red::-webkit-slider-thumb {
+  background-color: #ef4444;
+  border: 2px solid #fca5a5;
+}
+input[type="range"].slider-red:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+input[type="range"].slider-green::-webkit-slider-thumb {
+  background-color: #10b981;
+  border: 2px solid #6ee7b7;
+}
+input[type="range"].slider-green:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+input[type="range"].slider-amber::-webkit-slider-thumb {
+  background-color: #f59e0b;
+  border: 2px solid #fde68a;
+}
+input[type="range"].slider-amber:hover {
+  background: rgba(245, 158, 11, 0.2);
+}
+
+input[type="range"].slider-purple::-webkit-slider-thumb {
+  background-color: #8b5cf6;
+  border: 2px solid #ddd6fe;
+}
+input[type="range"].slider-purple:hover {
+  background: rgba(139, 92, 246, 0.2);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(239, 68, 68, 0.2), inset 0 0 5px rgba(239, 68, 68, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6), inset 0 0 10px rgba(239, 68, 68, 0.3);
+  }
+}
+
+.warning-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+}
+
+@keyframes pulse-light-glow {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.indicator-glow {
+  animation: pulse-light-glow 1.5s infinite ease-in-out;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
 }
